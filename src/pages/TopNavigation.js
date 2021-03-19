@@ -49,14 +49,14 @@ const useStyles = makeStyles((theme) => ({
         },
         marginRight: theme.spacing(2),
         marginLeft: 0,
-        width: '100%',
+        width: '50%',
         [theme.breakpoints.up('sm')]: {
             marginLeft: theme.spacing(0),
             width: '50%',
         },
         [theme.breakpoints.up('md')]: {
             marginLeft: theme.spacing(0),
-            width: '80%',
+            width: '70%',
         },
     },
     searchIcon: {
@@ -78,9 +78,9 @@ const useStyles = makeStyles((theme) => ({
         // vertical padding + font size from searchIcon
         paddingLeft: `calc(1em + ${theme.spacing(1)}px)`,
         transition: theme.transitions.create('width'),
-        width: '100%',
+        width: '90%',
         [theme.breakpoints.up('md')]: {
-            width: '164ch',
+            width: '100ch',
         },
     },
     sectionDesktop: {
@@ -150,7 +150,7 @@ export default function TopNavigation() {
                         />
                     </Grid>
                     <Grid item md={8}>
-                        Thời trang nữ 
+                        <Link to='/category'>Thoi trang nu</Link>
                     </Grid>
                     <Grid item md={2}>
                         <ArrowForwardIosSharpIcon/>
